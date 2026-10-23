@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>VOLTRA — AURORA E-1 Electric Bicycle</title>
+    <meta name="description" content="VOLTRA AURORA E-1. A 14.9 kg electric bicycle with 120 km of range and a 90 Nm mid-drive. Silence, with a surge." />
+    <meta name="theme-color" content="#07080a" />
+    <meta property="og:title" content="VOLTRA — AURORA E-1" />
+    <meta property="og:description" content="Silence, with a surge. Explore the AURORA E-1 electric bicycle in 3D." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8ff3d'/%3E%3Cpath d='M36 10 19 36h11l-3 18 18-27H33l3-17Z' fill='%2307080a'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-BEKG-G7J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BFoIPBom.css">
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="VOLTRA home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M13.5 2 5 14h5.4L8.6 22 19 9.6h-5.5L13.5 2Z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-word">VOLTRA<sup>®</sup></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#machine">Machine</a>
+        <a href="#technology">Technology</a>
+        <a href="#range">Range</a>
+        <a href="#specs">Specs</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost btn-sm" data-book="ride">Test ride</button>
+        <a class="btn btn-solid btn-sm" href="#configure">Configure</a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="#machine"><span>01</span>Machine</a>
+        <a href="#technology"><span>02</span>Technology</a>
+        <a href="#range"><span>03</span>Range</a>
+        <a href="#configure"><span>04</span>Configure</a>
+        <a href="#specs"><span>05</span>Specs</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <button class="btn btn-solid" data-book="ride">Book a test ride</button>
+        <p>Rotterdam · Berlin · Lisbon<br />hello@voltra.bike</p>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero" id="machine" aria-label="AURORA E-1 hero">
+        <div class="hero-visual" id="scene" aria-label="Interactive 3D model of the VOLTRA AURORA E-1 electric bicycle">
+          <div class="hotspots" id="hotspots">
+            <button class="hotspot" data-anchor="motor" aria-expanded="false">
+              <span class="hotspot-dot"></span>
+              <span class="hotspot-label">90 Nm mid-drive</span>
+              <span class="hotspot-card">
+                <strong>Silent mid-drive</strong>
+                <span>250 W nominal, 90 Nm peak. A torque sensor reads your input 240 times per second.</span>
+              </span>
+            </button>
+            <button class="hotspot" data-anchor="battery" aria-expanded="false">
+              <span class="hotspot-dot"></span>
+              <span class="hotspot-label">720 Wh battery</span>
+              <span class="hotspot-card">
+                <strong>Fully integrated</strong>
+                <span>720 Wh of Samsung cells sealed inside the down tube. 120 km in Tour mode.</span>
+              </span>
+            </button>
+            <button class="hotspot" data-anchor="cockpit" aria-expanded="false">
+              <span class="hotspot-dot"></span>
+              <span class="hotspot-label">Connected cockpit</span>
+              <span class="hotspot-card">
+                <strong>Everything, at a glance</strong>
+                <span>Colour display, turn-by-turn navigation and over-the-air updates.</span>
+              </span>
+            </button>
+            <button class="hotspot" data-anchor="wheels" aria-expanded="false">
+              <span class="hotspot-dot"></span>
+              <span class="hotspot-label">700 × 45c</span>
+              <span class="hotspot-card">
+                <strong>Grip, without the drag</strong>
+                <span>Tubeless-ready rims on 45 mm gravel tires. Supple on cobbles, quick in the city.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="visual-hint">
+            <span class="hint-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 1 0-8 0Z"/><path d="M4 12H2m20 0h-2M12 4V2m0 20v-2"/></svg>
+            </span>
+            Drag to orbit
+          </div>
+
+          <div class="loader" id="loader">
+            <span class="loader-word">VOLTRA</span>
+            <span class="loader-bar"><i></i></span>
+          </div>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>AURORA E-1 <span class="eyebrow-sep">/</span> Electric all-road</p>
+            <h1>Silence.<br /><span class="accent-text">With a surge.</span></h1>
+            <p class="lede">
+              A featherweight electric machine with a 90 Nm heart and 120 km of range.
+              Built to make the city feel quiet again.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#configure">Configure yours</a>
+              <button class="btn btn-outline" data-book="ride">Book a test ride</button>
+            </div>
+
+            <div class="hero-specs">
+              <div class="hero-spec">
+                <strong data-count="120">120</strong>
+                <span>km range</span>
+              </div>
+              <div class="hero-spec">
+                <strong>90</strong>
+                <span>Nm torque</span>
+              </div>
+              <div class="hero-spec">
+                <strong>14.9</strong>
+                <span>kg total</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-paint">
+            <span class="paint-label">Paint</span>
+            <div class="paint-options" role="group" aria-label="Frame colour">
+              <button class="paint-dot is-active" data-paint="graphite" aria-label="Graphite" aria-pressed="true" style="--dot:#41464f"></button>
+              <button class="paint-dot" data-paint="volt" aria-label="Volt lime" aria-pressed="false" style="--dot:#b9ea2e"></button>
+              <button class="paint-dot" data-paint="cobalt" aria-label="Cobalt" aria-pressed="false" style="--dot:#2456cf"></button>
+              <button class="paint-dot" data-paint="dune" aria-label="Dune" aria-pressed="false" style="--dot:#c9b393"></button>
+              <button class="paint-dot" data-paint="ember" aria-label="Ember" aria-pressed="false" style="--dot:#ad3a30"></button>
+            </div>
+            <span class="paint-name" id="hero-paint-name">Graphite</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#technology" aria-label="Scroll to technology">
+          <span>Scroll</span>
+          <i aria-hidden="true"></i>
+        </a>
+
+        <span class="hero-side" aria-hidden="true">AURORA E-1 — 2026 / ROTTERDAM</span>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>120 KM RANGE</span><i></i><span>90 NM</span><i></i><span>14.9 KG</span><i></i><span>2.5 H CHARGE</span><i></i><span>720 WH</span><i></i>
+          <span>120 KM RANGE</span><i></i><span>90 NM</span><i></i><span>14.9 KG</span><i></i><span>2.5 H CHARGE</span><i></i><span>720 WH</span><i></i>
+        </div>
+      </div>
+
+      <section class="section technology" id="technology">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>Engineering</p>
+            <h2>The quiet part<br />is the loudest.</h2>
+            <p class="section-copy">
+              We stripped the AURORA back to what matters: a frame you want to ride,
+              a motor you forget is there, and a battery that disappears into the silhouette.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="feature-top">
+                <span class="feature-index">01</span>
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="10" width="21" height="12" rx="3"/><path d="M25 14h3v4h-3M9 14v4m4-4v4m4-4v4"/></svg>
+                </span>
+              </div>
+              <h3>720 Wh, hidden in plain sight</h3>
+              <p>Fully integrated cells inside the down tube. No bulky box, no compromise on stiffness — just range.</p>
+              <span class="feature-meta">120 km · Tour mode</span>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-top">
+                <span class="feature-index">02</span>
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 3 8 18h6l-2 11 10-16h-6l1-10Z"/></svg>
+                </span>
+              </div>
+              <h3>90 Nm, delivered instantly</h3>
+              <p>A torque-sensing mid-drive reads your pedal stroke 240 times a second. Assistance feels like legs, not software.</p>
+              <span class="feature-meta">250 W nominal · 25 km/h</span>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-top">
+                <span class="feature-index">03</span>
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 24c4-9 16-9 20 0M16 6v4m-5 5h10M9 21h14"/><circle cx="16" cy="18" r="2"/></svg>
+                </span>
+              </div>
+              <h3>14.9 kg, fully equipped</h3>
+              <p>Hydroformed alloy and a carbon fork. Lights, mudguards and a rack are built in — not bolted on later.</p>
+              <span class="feature-meta">Carbon fork · Integrated lights</span>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="feature-top">
+                <span class="feature-index">04</span>
+                <span class="feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="5" width="16" height="23" rx="3"/><path d="M13 9h6M16 22h.01"/></svg>
+                </span>
+              </div>
+              <h3>A bike that keeps learning</h3>
+              <p>Over-the-air updates, GPS tracking and ride analytics in the VOLTRA app. Your setup travels with you.</p>
+              <span class="feature-meta">4G · GPS · OTA</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="range">
+        <div class="container">
+          <div class="range-panel reveal">
+            <div class="range-copy">
+              <p class="eyebrow"><span class="eyebrow-dot"></span>Range</p>
+              <h2>How far<br />is far?</h2>
+              <p class="section-copy">
+                Pick a mode. The AURORA recalculates in real time based on terrain,
+                temperature and your last 30 kilometres.
+              </p>
+
+              <div class="mode-switch" role="group" aria-label="Assistance mode">
+                <button class="mode" data-mode="eco" aria-pressed="false">Eco</button>
+                <button class="mode is-active" data-mode="tour" aria-pressed="true">Tour</button>
+                <button class="mode" data-mode="sport" aria-pressed="false">Sport</button>
+              </div>
+
+              <div class="range-note">
+                <span class="note-dot"></span>
+                <span id="mode-note">Balanced assistance for everyday city riding.</span>
+              </div>
+            </div>
+
+            <div class="range-readout">
+              <div class="range-number">
+                <span id="range-value">120</span><span class="range-unit">km</span>
+              </div>
+              <div class="range-caption">
+                <span>Estimated range</span>
+                <span id="range-battery-label">72% battery</span>
+              </div>
+              <div class="battery" id="battery" role="img" aria-label="Battery level"></div>
+              <div class="range-foot">
+                <div><strong>2.5 h</strong><span>full charge</span></div>
+                <div><strong>720 Wh</strong><span>capacity</span></div>
+                <div><strong>4 A</strong><span>fast charger</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section config" id="configure">
+        <div class="container">
+          <div class="config-head reveal">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span>Configure</p>
+              <h2>Make it yours.</h2>
+            </div>
+            <p class="section-copy config-copy">
+              Five hand-finished paint options. One unmistakable silhouette.
+              Your colour choice updates the 3D machine in real time.
+            </p>
+          </div>
+
+          <div class="config-grid reveal" role="group" aria-label="Choose a paint finish">
+            <button class="config-card is-active" data-paint="graphite" aria-pressed="true">
+              <span class="config-chip" style="--chip:#3b4048;--chip-2:#191c20"></span>
+              <span class="config-info"><strong>Graphite</strong><small>Metallic · Gloss</small></span>
+              <span class="config-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="config-card" data-paint="volt" aria-pressed="false">
+              <span class="config-chip" style="--chip:#c6f23c;--chip-2:#6f8f0c"></span>
+              <span class="config-info"><strong>Volt Lime</strong><small>Solid · Gloss</small></span>
+              <span class="config-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="config-card" data-paint="cobalt" aria-pressed="false">
+              <span class="config-chip" style="--chip:#2a5be0;--chip-2:#10245f"></span>
+              <span class="config-info"><strong>Cobalt</strong><small>Metallic · Gloss</small></span>
+              <span class="config-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="config-card" data-paint="dune" aria-pressed="false">
+              <span class="config-chip" style="--chip:#d3bd9c;--chip-2:#7e6a4d"></span>
+              <span class="config-info"><strong>Dune</strong><small>Satin · Sand</small></span>
+              <span class="config-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="config-card" data-paint="ember" aria-pressed="false">
+              <span class="config-chip" style="--chip:#b64034;--chip-2:#5c1712"></span>
+              <span class="config-info"><strong>Ember</strong><small>Metallic · Gloss</small></span>
+              <span class="config-check" aria-hidden="true">✓</span>
+            </button>
+          </div>
+
+          <div class="reserve-bar reveal">
+            <div class="reserve-info">
+              <span class="reserve-label">AURORA E-1 · <span id="config-paint-name">Graphite</span></span>
+              <span class="reserve-price">€4,890 <small>incl. VAT</small></span>
+            </div>
+            <div class="reserve-actions">
+              <a class="btn btn-outline" href="#machine" id="see-in-3d">See it in 3D <span aria-hidden="true">↗</span></a>
+              <button class="btn btn-solid" data-book="reserve">Reserve yours</button>
+            </div>
+          </div>
+          <p class="config-foot reveal">Free first service · 5-year frame warranty · 30-day returns</p>
+        </div>
+      </section>
+
+      <section class="section specs" id="specs">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span>Specification</p>
+            <h2>Every detail,<br />accounted for.</h2>
+          </div>
+
+          <div class="specs-grid">
+            <div class="spec-group reveal">
+              <h3>Motor &amp; battery</h3>
+              <div class="spec-row"><span>Motor</span><span>VOLTRA Drive M2 · 250 W</span></div>
+              <div class="spec-row"><span>Torque</span><span>90 Nm peak</span></div>
+              <div class="spec-row"><span>Battery</span><span>720 Wh · integrated</span></div>
+              <div class="spec-row"><span>Charge time</span><span>2.5 h (4 A charger)</span></div>
+              <div class="spec-row"><span>Assist modes</span><span>Eco · Tour · Sport</span></div>
+            </div>
+
+            <div class="spec-group reveal">
+              <h3>Frame &amp; geometry</h3>
+              <div class="spec-row"><span>Frame</span><span>Hydroformed 6061 alloy</span></div>
+              <div class="spec-row"><span>Fork</span><span>Full carbon · 12 mm thru-axle</span></div>
+              <div class="spec-row"><span>Weight</span><span>14.9 kg</span></div>
+              <div class="spec-row"><span>Frame sizes</span><span>S / M / L / XL</span></div>
+              <div class="spec-row"><span>Wheelbase</span><span>1,132 mm</span></div>
+            </div>
+
+            <div class="spec-group reveal">
+              <h3>Brakes &amp; wheels</h3>
+              <div class="spec-row"><span>Brakes</span><span>4-piston hydraulic discs</span></div>
+              <div class="spec-row"><span>Rotors</span><span>180 mm front / 160 mm rear</span></div>
+              <div class="spec-row"><span>Wheels</span><span>700c alloy · tubeless ready</span></div>
+              <div class="spec-row"><span>Tires</span><span>700 × 45c gravel</span></div>
+              <div class="spec-row"><span>Lights</span><span>120 lux front · brake-reactive rear</span></div>
+            </div>
+
+            <div class="spec-group reveal">
+              <h3>Connectivity</h3>
+              <div class="spec-row"><span>Display</span><span>2.4" colour · anti-glare</span></div>
+              <div class="spec-row"><span>App</span><span>iOS · Android</span></div>
+              <div class="spec-row"><span>Tracking</span><span>GPS · 4G · motion alarm</span></div>
+              <div class="spec-row"><span>Updates</span><span>Over-the-air</span></div>
+              <div class="spec-row"><span>Warranty</span><span>5 years frame · 2 years electronics</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <span class="cta-word" aria-hidden="true">VOLTRA</span>
+            <svg class="cta-wheel" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+              <circle cx="200" cy="200" r="188" stroke="rgba(255,255,255,0.10)" />
+              <circle cx="200" cy="200" r="151" stroke="rgba(255,255,255,0.13)" stroke-width="8" stroke-dasharray="3 8" />
+              <circle cx="200" cy="200" r="34" stroke="rgba(255,255,255,0.22)" />
+              <circle cx="200" cy="200" r="8" fill="rgba(255,255,255,0.25)" />
+              <g stroke="rgba(255,255,255,0.13)">
+                <path d="M200 200 200 17M200 200 200 383M200 200 17 200M200 200 383 200" />
+                <path d="M200 200 71 71M200 200 329 329M200 200 329 71M200 200 71 329" />
+                <path d="M200 200 151 27M200 200 249 27M200 200 151 373M200 200 249 373" />
+                <path d="M200 200 27 151M200 200 27 249M200 200 373 151M200 200 373 249" />
+              </g>
+              <circle cx="200" cy="200" r="165" stroke="var(--accent)" stroke-width="2" stroke-dasharray="150 890" opacity="0.75" />
+              <text x="200" y="372" fill="rgba(255,255,255,0.4)" font-family="Space Grotesk, sans-serif" font-size="11" letter-spacing="4" text-anchor="middle">AURORA E-1</text>
+            </svg>
+            <div class="cta-inner">
+              <p class="eyebrow"><span class="eyebrow-dot"></span>Ready when you are</p>
+              <h2>The quietest<br />way to move.</h2>
+              <p class="section-copy">Book a 48-hour test ride at any VOLTRA space. Bring your commute.</p>
+              <div class="hero-actions">
+                <button class="btn btn-solid" data-book="ride">Book a test ride</button>
+                <a class="btn btn-outline" href="#configure">Reserve yours</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#top" aria-label="VOLTRA home">
+              <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M13.5 2 5 14h5.4L8.6 22 19 9.6h-5.5L13.5 2Z" fill="currentColor"/></svg>
+              </span>
+              <span class="brand-word">VOLTRA<sup>®</sup></span>
+            </a>
+            <p>Electric bicycles for people who love the ride, not the noise.</p>
+            <form class="newsletter" id="newsletter">
+              <label class="sr-only" for="newsletter-email">Email address</label>
+              <input type="email" id="newsletter-email" name="email" placeholder="Email for ride notes" required autocomplete="email" />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </form>
+            <p class="newsletter-status" id="newsletter-status" role="status"></p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Machine</h4>
+            <a href="#machine">AURORA E-1</a>
+            <a href="#technology">Technology</a>
+            <a href="#range">Range</a>
+            <a href="#specs">Specification</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#configure">Configure</a>
+            <a href="#machine" data-book="ride">Test rides</a>
+            <a href="#top">Stories</a>
+            <a href="#top">Careers</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Spaces</h4>
+            <a href="#top">Rotterdam</a>
+            <a href="#top">Berlin</a>
+            <a href="#top">Lisbon</a>
+            <a href="#top">Copenhagen</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 VOLTRA Mobility B.V.</span>
+          <div>
+            <a href="#top">Privacy</a>
+            <a href="#top">Terms</a>
+            <a href="#top">Instagram</a>
+          </div>
+          <span>Designed for the long way home.</span>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="book-dialog" id="book-dialog" aria-labelledby="book-title">
+      <button class="dialog-close" id="dialog-close" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="dialog-body">
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span id="dialog-eyebrow">Test ride</span></p>
+        <h2 id="book-title">Bring your commute.</h2>
+        <p class="dialog-copy" id="dialog-copy">48 hours, one charger, zero excuses. Tell us where to meet you.</p>
+
+        <form id="book-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Alex Rivera" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="alex@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="city">City</label>
+              <select id="city" name="city" required>
+                <option value="" selected disabled>Choose a space</option>
+                <option>Rotterdam</option>
+                <option>Berlin</option>
+                <option>Lisbon</option>
+                <option>Copenhagen</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+          </div>
+          <button class="btn btn-solid btn-block" type="submit" id="book-submit">Send request</button>
+          <p class="form-note">No payment. We'll confirm within one working day.</p>
+        </form>
+
+        <div class="form-success" id="form-success" hidden>
+          <span class="success-mark" aria-hidden="true">✓</span>
+          <h3>Request received.</h3>
+          <p>We'll email you within one working day to confirm your AURORA E-1.</p>
+          <button class="btn btn-outline" id="success-close">Back to the bike</button>
+        </div>
+      </div>
+    </dialog>
+
+  </body>
+</html>
